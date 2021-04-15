@@ -1,0 +1,372 @@
+nav {
+  position: fixed;
+  background-color: var(--body-color);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 10vh;
+  z-index: 999; }
+  nav .container {
+    padding: 1rem 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    font-weight: 500; }
+    @media screen and (max-width: 768px) {
+      nav .container {
+        width: 90%;
+        position: relative; } }
+    nav .container .logo {
+      color: var(--text-color); }
+      nav .container .logo:hover {
+        color: var(--first-color); }
+    @media screen and (max-width: 768px) {
+      nav .container .open {
+        top: 10vh; } }
+    nav .container ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 50%;
+      text-transform: capitalize; }
+      @media screen and (max-width: 768px) {
+        nav .container ul {
+          background-color: var(--body-color);
+          flex-direction: column;
+          position: absolute;
+          top: -300%;
+          width: 100%;
+          transition: top 0.5s; } }
+      nav .container ul li {
+        color: var(--text-color); }
+        nav .container ul li:hover {
+          color: var(--first-color); }
+    nav .container .nav__menu {
+      display: none; }
+      @media screen and (max-width: 768px) {
+        nav .container .nav__menu {
+          display: block;
+          cursor: pointer; } }
+
+main {
+  width: 100vw; }
+  main section {
+    width: 80%;
+    margin: 10vh auto 0 auto;
+    min-height: 90vh; }
+    @media screen and (min-width: 768px) {
+      main section {
+        padding: 0 5rem; } }
+    @media screen and (max-width: 768px) {
+      main section {
+        width: 90%; } }
+  main .home {
+    display: flex;
+    justify-content: space-between; }
+    @media screen and (max-width: 768px) {
+      main .home {
+        flex-direction: column; } }
+    main .home .hometext {
+      margin-top: 90px; }
+      @media screen and (max-width: 768px) {
+        main .home .hometext {
+          margin-top: 0; } }
+    main .home .homeimg {
+      width: 500px; }
+      @media screen and (max-width: 768px) {
+        main .home .homeimg {
+          width: 250px; } }
+  main .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media screen and (max-width: 768px) {
+      main .about {
+        flex-direction: column-reverse; } }
+    main .about .aboutimg {
+      width: 600px; }
+      @media screen and (max-width: 768px) {
+        main .about .aboutimg {
+          width: 250px; } }
+    main .about .abouttext {
+      margin-left: 7rem; }
+      @media screen and (max-width: 768px) {
+        main .about .abouttext {
+          margin-left: 0;
+          text-align: center; } }
+      main .about .abouttext p:nth-child(1) {
+        color: var(--first-color);
+        font-weight: 500;
+        margin-bottom: 10px; }
+      main .about .abouttext p:nth-child(3) {
+        color: var(--text-color-light);
+        margin-bottom: 35px; }
+  main .services p:nth-child(1) {
+    text-align: center;
+    color: var(--first-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 20px; }
+  main .services h2 {
+    text-align: center; }
+  main .services .experices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media screen and (max-width: 768px) {
+      main .services .experices {
+        flex-direction: column; } }
+    main .services .experices .cards {
+      text-align: center;
+      margin-left: 3rem; }
+      @media screen and (max-width: 768px) {
+        main .services .experices .cards {
+          margin-left: 0;
+          margin-bottom: 20px; } }
+      main .services .experices .cards .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        main .services .experices .cards .icon svg {
+          width: 64px;
+          height: 64px;
+          margin-bottom: 35px;
+          fill: var(--first-color); }
+      main .services .experices .cards p:nth-child(2) {
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 1.2rem; }
+      main .services .experices .cards p:nth-child(3) {
+        color: var(--text-color); }
+  main .menu p:nth-child(1) {
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--first-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 20px; }
+  main .menu h2 {
+    text-align: center; }
+  main .menu .ROW {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    @media screen and (max-width: 768px) {
+      main .menu .ROW {
+        flex-direction: column; } }
+    main .menu .ROW .apps {
+      background-color: white;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 2rem 2.5rem;
+      border-radius: 5px;
+      position: relative; }
+      @media screen and (max-width: 768px) {
+        main .menu .ROW .apps {
+          margin-bottom: 20px; } }
+      main .menu .ROW .apps img {
+        width: 128px;
+        height: 128px;
+        margin-bottom: 10px; }
+      main .menu .ROW .apps .dishName {
+        font-weight: 600;
+        font-size: 1rem; }
+      main .menu .ROW .apps .description {
+        color: var(--text-color);
+        font-size: 0.9rem;
+        margin-bottom: 10px; }
+      main .menu .ROW .apps .price {
+        font-weight: 600;
+        font-size: 0.9rem; }
+      main .menu .ROW .apps .cart {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: var(--first-color);
+        right: 0;
+        bottom: 0;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer; }
+  main .menu .appStore {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15rem; }
+    @media screen and (max-width: 768px) {
+      main .menu .appStore {
+        flex-direction: column-reverse; } }
+  main .menu .appImg {
+    width: 600px; }
+    @media screen and (max-width: 768px) {
+      main .menu .appImg {
+        width: 250px; } }
+  main .menu .apptext {
+    margin-left: 7rem; }
+    @media screen and (max-width: 768px) {
+      main .menu .apptext {
+        margin-left: 0;
+        text-align: center; } }
+    main .menu .apptext p:nth-child(1) {
+      text-align: initial;
+      color: var(--first-color);
+      font-weight: 500px;
+      margin-bottom: 20px; }
+      @media screen and (max-width: 768px) {
+        main .menu .apptext p:nth-child(1) {
+          text-align: center; } }
+    main .menu .apptext h2 {
+      font-weight: 600;
+      text-align: initial; }
+      @media screen and (max-width: 768px) {
+        main .menu .apptext h2 {
+          text-align: center; } }
+    main .menu .apptext p:nth-child(3) {
+      color: var(--text-color);
+      margin-bottom: 35px; }
+    main .menu .apptext img {
+      width: 110px;
+      height: 35px;
+      margin: 5px; }
+  main .contactus {
+    display: flex;
+    align-items: center; }
+    @media screen and (max-width: 768px) {
+      main .contactus {
+        flex-direction: column;
+        text-align: center; } }
+  main .letsTalk p:nth-child(1) {
+    color: var(--first-color);
+    margin-bottom: 20px; }
+  main .letsTalk h2 {
+    font-weight: 600; }
+  main .letsTalk p:nth-child(3) {
+    color: var(--text-color); }
+  main .button {
+    margin-left: 7rem;
+    width: 380px;
+    height: 50px; }
+    @media screen and (max-width: 768px) {
+      main .button {
+        margin-left: 0;
+        margin-top: 35px; } }
+
+.footer__row {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  @media screen and (max-width: 768px) {
+    .footer__row {
+      flex-direction: column;
+      width: 80%;
+      align-items: flex-start; } }
+  .footer__row .col__1 p:nth-child(1) {
+    font-weight: 600;
+    color: var(--first-color);
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin-bottom: 5px; }
+  .footer__row .col__1 p:nth-child(2) {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    margin-bottom: 35px; }
+  .footer__row .col__1 p:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px; }
+  .footer__row .col__2 p:nth-child(1) {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 20px; }
+  .footer__row .col__2 ul li {
+    text-transform: capitalize;
+    color: var(--text-color);
+    margin-bottom: 5px; }
+  .footer__row .col__3 p:nth-child(1) {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 20px; }
+  .footer__row .col__3 ul li {
+    text-transform: capitalize;
+    color: var(--text-color); }
+
+.footer__bottom p {
+  margin-top: 50px;
+  text-align: center;
+  color: var(--text-color-light);
+  font-size: 0.9rem;
+  margin-bottom: 35px; }
+
+:root {
+  /*========== Colors ==========*/
+  --first-color: #069c54;
+  --first-color-alt: #048654;
+  --title-color: #393939;
+  --text-color: #707070;
+  --text-color-light: #a6a6a6;
+  --body-color: #fbfefd;
+  --container-color: #ffffff; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--body-color);
+  overflow-x: hidden; }
+
+li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0; }
+
+img {
+  max-width: 100%; }
+
+button {
+  background-color: var(--first-color);
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  border-radius: 10px; }
+
+h1 {
+  font-size: 4rem;
+  color: var(--first-color);
+  font-weight: 700;
+  margin-bottom: 20px; }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 3rem; } }
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--title-color);
+  margin-bottom: 35px; }
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 1.5rem; } }
